@@ -1,0 +1,23 @@
+# Backup files
+*-old.*
+*-backup.*
+*.bak
+
+# Documentation (optional - comment out if you want to include them)
+# *.md
+# !README.md
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
