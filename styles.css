@@ -129,11 +129,23 @@ body {
 /* Hero Section */
 .hero {
     padding: 140px 0 80px;
-    background: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 60%, transparent 100%),
-        url('images/hero-new.jpg') center center / cover no-repeat;
     position: relative;
     overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/hero-new.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .hero::before {
@@ -143,10 +155,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: transparent;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%);
+    z-index: 1;
     pointer-events: none;
-    z-index: 0;
 }
+
+
 
 .hero-main {
     display: grid;
@@ -155,7 +169,7 @@ body {
     align-items: center;
     margin-bottom: 60px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero-text {
@@ -1092,6 +1106,15 @@ section {
     
     .hero {
         padding: 120px 0 60px;
+    }
+    
+    .hero::after {
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .hero::before {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 100%);
     }
     
     .hero-main {
