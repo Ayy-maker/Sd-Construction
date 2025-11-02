@@ -129,7 +129,9 @@ body {
 /* Hero Section */
 .hero {
     padding: 140px 0 80px;
-    background: linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 50%, #F8FAFC 100%);
+    background: 
+        linear-gradient(135deg, rgba(14, 165, 233, 0.85) 0%, rgba(6, 182, 212, 0.75) 100%),
+        url('images/hero-new.jpg') center center / cover no-repeat;
     position: relative;
     overflow: hidden;
 }
@@ -137,13 +139,13 @@ body {
 .hero::before {
     content: '';
     position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 800px;
-    height: 800px;
-    background: radial-gradient(circle, rgba(14, 165, 233, 0.08) 0%, transparent 70%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.9) 0%, rgba(6, 182, 212, 0.7) 50%, rgba(14, 165, 233, 0.85) 100%);
     pointer-events: none;
-    border-radius: 50%;
+    z-index: 0;
 }
 
 .hero-main {
@@ -152,17 +154,34 @@ body {
     gap: 60px;
     align-items: center;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-text {
     max-width: 600px;
 }
 
+.hero .hero-title {
+    color: white;
+}
+
 .hero-tagline {
     font-size: 20px;
     font-weight: 700;
-    color: var(--primary);
+    color: white;
     margin-bottom: 16px;
+}
+
+.hero .hero-subtitle {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.hero .gradient-text {
+    background: linear-gradient(135deg, #FFF 0%, rgba(255, 255, 255, 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-projects {
