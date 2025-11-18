@@ -2,9 +2,7 @@
 
 A modern, responsive construction company website featuring animated statistics, project showcases, and optimized for quick engagement.
 
-![SD Construction](https://img.shields.io/badge/Construction-Website-0EA5E9?style=for-the-badge)
-![Responsive](https://img.shields.io/badge/Mobile-Responsive-success?style=for-the-badge)
-![No Framework](https://img.shields.io/badge/Pure-HTML%2FCSS%2FJS-orange?style=for-the-badge)
+
 
 ## ✨ Features
 
@@ -64,19 +62,6 @@ A modern, responsive construction company website featuring animated statistics,
 - ✅ Safari (latest)
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
-### Files Structure
-```
-sd-construction/
-├── images/               # All project images (10 files)
-│   ├── hero-bg.jpg
-│   ├── project-*.jpg
-│   └── service-*.jpg
-├── index.html           # Main HTML file (498 lines)
-├── styles.css          # All styles (1260+ lines)
-├── script.js           # Interactive features (152 lines)
-└── .gitignore          # Git ignore rules
-```
-
 ## 🎯 Design Highlights
 
 ### Color Palette
@@ -99,87 +84,6 @@ Text Light:      #666666  (Gray)
 - `968px` - Mobile landscape
 - `640px` - Mobile portrait
 
-## 🌐 Enable GitHub Pages
-
-After pushing to GitHub:
-
-1. Go to **Settings** → **Pages**
-2. Source: Deploy from branch `main`
-3. Folder: `/ (root)`
-4. Click **Save**
-5. Wait 1-2 minutes
-6. Access at: `https://YOUR-USERNAME.github.io/Sd-Construction/`
-
-## 📱 Mobile Preview
-
-### Chrome DevTools
-1. Open `index.html` in Chrome
-2. Press `F12` (or `Cmd+Option+I` on Mac)
-3. Click phone icon 📱 or press `Cmd+Shift+M`
-4. Select device: iPhone, iPad, etc.
-
-### Test on Real Device
-1. Start local server: `python3 -m http.server 8000`
-2. Find your IP: `ifconfig | grep "inet "`
-3. Open on phone: `http://YOUR-IP:8000`
-
-## 🔧 Customization
-
-### Update Content
-Edit `index.html` to change:
-- Company name and contact info
-- Project descriptions and images
-- Service offerings
-- Testimonials
-
-### Change Colors
-Edit `styles.css` at the top:
-```css
-:root {
-    --primary: #0EA5E9;      /* Change this */
-    --primary-dark: #0284C7;  /* And this */
-    /* ... */
-}
-```
-
-### Add/Remove Sections
-Sections are clearly marked in `index.html`:
-```html
-<!-- Hero Section -->
-<!-- Projects Section -->
-<!-- Services Section -->
-etc.
-```
-
-## 📈 Stats Animation
-
-The counter animation triggers when scrolling into view:
-- **80+** Projects Completed
-- **100+** Happy Clients  
-- **10+** Years Experience
-
-Smooth 2-second animation, only plays once per page load.
-
-## 🖼️ Images
-
-All images optimized:
-- Format: JPEG
-- Total: 10 images (~1.1MB)
-- Responsive: Multiple sizes via CSS
-- Lazy loading ready
-
-### Replace Images
-1. Add new images to `images/` folder
-2. Update `src` attributes in HTML
-3. Maintain aspect ratios for best results
-
-## 🤝 Contributing
-
-This is a client project. For modifications:
-1. Test on multiple devices
-2. Verify all links work
-3. Check mobile responsiveness
-4. Test form functionality
 
 ## 📄 License
 
@@ -195,20 +99,16 @@ Proprietary - SD Construction Builders
 
 ---
 
-## 🎉 Key Achievements
 
-✅ **Modern Design** - Contemporary aesthetic  
-✅ **Fast Loading** - No heavy animations  
-✅ **Mobile First** - Optimized for all devices  
-✅ **SEO Ready** - Semantic HTML structure  
-✅ **Animated Stats** - Engaging user experience  
-✅ **Project Showcase** - Front and center  
-✅ **Easy to Update** - Clear code structure  
+
+**Modern Design** - Contemporary aesthetic  
+**Fast Loading** - No heavy animations  
+**Mobile First** - Optimized for all devices  
+**SEO Ready** - Semantic HTML structure  
+**Animated Stats** - Engaging user experience  
+**Project Showcase** - Front and center  
+**Easy to Update** - Clear code structure  
 
 Built with ❤️ for SD Construction Builders
 
----
 
-**Version:** 1.0.0  
-**Last Updated:** November 2024  
-**Status:** ✅ Production Ready
